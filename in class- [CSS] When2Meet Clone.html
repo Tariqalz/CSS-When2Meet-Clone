@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When2Meet Clone</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>When2Meet</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#create-event">Create Event</a></li>
+            <li><a href="#input-avaliability">Select Availability</a></li>
+            <li><a href="#view-results">View Results</a></li>
+            <li><a href="#sign-up">Sign up</a></li>
+        </ul>
+    </nav>
+    <div>
+        <section id="create-event">
+            <h2>Create Event</h2>
+            <form id="create-event-form">
+                <table>
+                    <tr>
+                        <th><label for="event-name">Event Name:</label></th>
+                        <td><input type="text" id="event-name" name="event-name"></td>
+                        <th><label for="event-description">Event Description:</label></th>
+                        <td><textarea name="event-description" id="event-description"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><label for="start-date">Start Date:</label></th>
+                        <td><input type="date" id="start-date" name="start-date"></td>
+                        <th><label for="end-date">End Date:</label></th>
+                        <td><input type="date" id="end-date" name="end-date"></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><label for="time-increment">Time Increment:</label></th>
+                        <td><select id="time-increment" name="time-increment">
+                                <option value="15">15 minutes</option>
+                                <option value="30">30 minutes</option>
+                                <option value="60">1 hour</option>
+                                <option value="75">1 hour and 15 minutes</option>
+                                <option value="90">1 hour and 30 minutes</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4"><button type="button">Create Event</button></th>
+                    </tr>
+                </table>
+        </section>
+        <hr />
+        <section id="input-avaliability">
+            <h2>Input Avaliability</h2>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td><input type="checkbox" name="monday" id="monday" value="yes"></td>
+                    <td><input type="checkbox" name="tuesday" id="tuesday" value="yes"></td>
+                    <td><input type="checkbox" name="wednesday" id="wednesday" value="yes"></td>
+                    <td><input type="checkbox" name="thursday" id="thursday" value="yes"></td>
+                    <td><input type="checkbox" name="friday" id="friday" value="yes"></td>
+                </tr>
+            </table>
+            <button type="button">Submit Availability</button>
+        </section>
+        <hr />
+        <section id="view-results">
+            <h2>View Results</h2>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>3 available</td>
+                    <td>2 available</td>
+                    <td>4 available</td>
+                    <td>1 available</td>
+                    <td>5 available</td>
+                </tr>
+            </table>
+            <p>Sherable Link: <a href="https://when2meet.com/event?id=123456">https://when2meet.com/event?id=123456</a>
+            </p>
+        </section>
+        <hr />
+        <section id="sign-up">
+            <h2>Sign up</h2>
+            <form id="sign-up-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <br>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password">
+                <br>
+                <button type="button">Sign up</button>
+            </form>
+        </section>
+        <hr />
+        <footer>
+            <h3>When2Meet</h3>
+            <table>
+                <tr>
+                    <td><a href="#">About us</a></td>
+                    <td><a href="#">Scheduler</a></td>
+                    <td><a href="#">Blog</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Contact Us</a></td>
+                    <td><a href="#">Booking</a></td>
+                    <td><a href="#">Media</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">How to's</a></td>
+                    <td><a href="#">Appointments</a></td>
+                    <td><a href="#">FAQs</a></td>
+                </tr>
+            </table>
+            <p>&copy 2024 WhenToMeet. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
