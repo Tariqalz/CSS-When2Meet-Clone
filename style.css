@@ -52,6 +52,16 @@ table{
     text-align:left;
 }
 
+footer{
+    margin: 100px; 
+    margin-top: 0; 
+    margin-bottom: 50px; 
+    background-color: rgb(253, 243, 203); 
+    padding: 10px 50px 50px 50px; 
+    border-radius: 20px;  
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
 footer table tr td a{
     padding-left: 100px;
     text-decoration: none;
