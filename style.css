@@ -48,6 +48,10 @@ body div section{
     margin: 0 auto;
 }
 
+table{
+    text-align:left;
+}
+
 footer table tr td a{
     padding-left: 100px;
     text-decoration: none;
